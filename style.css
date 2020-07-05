@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333333;
+    background-color: white;
+}
+
+h1, h2 {
+    font-weight: 400;
+    padding: 10px 5px 10px 5px;
+    background-color: rgb(255, 240, 108);
+    display: inline-block;
+    width: auto;
+    
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.post {
+    display: grid;
+    max-width: 1000px;
+    height:1000px;
+    margin:50px auto;
+    grid-gap: 20px 20px;
+    grid-template-columns: 5fr 1fr 1fr;
+    background-color: white;
+}
+
+.post > * {
+    grid-column:  2 / -1;
+}
+
+.post > figure {
+    grid-column: 1 / -1;
+}
+figcaption {
+    position: relative;
+    top:610px;
+}
+
+.hero {
+
+    background-image: url("https://images.unsplash.com/photo-1566740932818-cacfb780ae18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    height:600px;
+}
+
+.recipe {
+    grid-column: 1 / 2;
+   
+}
+
+.ingredients {
+    grid-column: 2 / 4;
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.ingredients > ul {
+    list-style: none;
+    font-weight: 200;
+
+}
